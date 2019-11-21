@@ -17,7 +17,7 @@
 |group_id|integer|null: false, foreign_key: true|
 |name|string|null: false, foreign_key: true|
 |e-mail|string|null: false,|
-|password|null: false,|
+|password|string|null: false,|
 
 
 ## groupテーブル
