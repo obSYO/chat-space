@@ -25,3 +25,12 @@
 |------|----|-------|
 |name|string|null: false, foreign_key: true|
 
+## messageテーブル
+|Column|Type|Options|
+|------|----|-------|
+|body|text|null: false|
+|image|string|foreign_key: true|
+|group_id|integer|null: false, foreign_key: true|
+|user_id|integer|null: false, foreign_key: true|
+
+
