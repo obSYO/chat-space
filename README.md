@@ -20,3 +20,8 @@
 |password|null: false,|
 
 
+## groupテーブル
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false, foreign_key: true|
+
