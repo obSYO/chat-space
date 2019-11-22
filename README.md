@@ -3,7 +3,6 @@
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
-
 ### Association
 - belongs_to :groups
 - belongs_to :users
@@ -16,12 +15,10 @@
 |password|string|null: false,|
 |group_id|integer|null: false, foreign_key: true|
 |message_id|integer|null: false, foreign_key: true|
-
-
 ### Association
 - has_many :messages
-- has many groups through members
-
+- has_many :members
+- has_many :groups, through: :members
 
 
 ## groupsテーブル
@@ -30,11 +27,10 @@
 |name|string|null: false, foreign_key: true|
 |message_id|integer|null: false, foreign_key: true|
 |user_id|integer|null: false, foreign_key: true|
-
 ### Association
 - has_many :messages
-- has many users through members
-
+- has_many :users, through :members
+- has_many :members
 
 ## messagesテーブル
 |Column|Type|Options|
