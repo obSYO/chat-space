@@ -1,0 +1,99 @@
+.chat-main{
+  height: 100%;
+  width:calc(100% - 300px);
+  float: right;
+  .main__header{
+    margin: 0;
+    padding: 0 40px;
+    box-sizing: border-box;  
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px #eeeeee;
+    right: 0;
+    .leftbox__title{
+      margin-top: 35px ;
+      font-size: 20px;
+      color: #333333;
+    }
+    .leftbox__messagepreview{
+      margin-top: 15px;
+      font-size: 12px;
+      color: #999999;
+    }
+    .main__header-rightbtn{
+      margin-top: 28px;
+      margin-right: 20px;
+      margin-bottom: auto;
+      border: solid 1px #38aef0;
+      line-height: 40px;
+      padding: 0 20px;
+      a{
+        color: #38aef0;
+        text-decoration: none;
+      }
+    }
+  }
+  .chat-area{
+    background-color: #fafafa;
+    height:calc(100vh - 100px);
+    width: calc(100vw - 300px);
+    padding-left: 40px;
+    padding-right: 40px;
+    position: fixed;
+    .chat-area__username{
+      margin-top: 46px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #434a54;
+      display: flex;
+    }
+    .chat-area__created__at{
+      margin-left: 10px;
+      font-size: 12px;
+      color: #999999;
+    }
+    .chat-area__text{
+      margin-top: 10px;
+      margin-bottom: 40px;
+      font-size: 14px;
+      left: 0%;
+    }
+  }
+}
+  .message{
+    position: fixed;
+    bottom: 0;
+    width: calc(100vw - 300px);
+    background-color: #ddd;
+    display: flex;
+    height: 90px;
+    align-items: center;
+    .textmessage{
+      font-size: 16px;
+      margin-right: 10px;
+      margin-left: 40px;
+      height: 50px;
+      width: 100%;
+      position: relative;
+    }
+
+    .picturelabel{
+      position: absolute;
+      right: 180px;
+      cursor: pointer;
+    }
+    .uploadfile{
+      display: none;
+    }
+    .submitbtn{
+      margin-left: 15px;
+      margin-right: 40px;
+      background-color: #38AEF0;
+      color: white;
+      text-align: center;
+      padding: 0 30px;
+      height: 50px;
+      cursor: pointer;
+    }
+  }
