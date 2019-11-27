@@ -1,0 +1,44 @@
+.side{
+  color: #ffffff;
+  text-decoration: none;
+  position: fixed;
+  float: left;
+}
+
+.side__head--users{
+  background-color:#253141;
+  height: 100px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  box-sizing: border-box;
+  padding: 0 20px;
+  .user__btn{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    a{
+      color: white;
+    }  
+  }
+}
+.group{
+  margin: 0;
+  background-color:#2f3e51;
+  height: calc(100vh - 100px);
+  box-sizing: border-box;
+  padding: 0 20px;
+  position: relative;
+  font-weight: bold;
+  &__name{
+    font-size: 15px;
+    margin:20px 0 40px;
+    position: absolute;
+  }
+    .messagepreview{
+      font-size: 11px;
+    }
+}
+
