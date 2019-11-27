@@ -1,6 +1,6 @@
 .chat-main{
   height: 100%;
-  width:calc(100% - 300px);
+  width:calc(100vw - 300px);
   float: right;
   .main__header{
     margin: 0;
@@ -16,12 +16,12 @@
       font-size: 20px;
       color: #333333;
     }
-    .leftbox__messagepreview{
+    .main__header__leftbox__messagepreview{
       margin-top: 15px;
       font-size: 12px;
       color: #999999;
     }
-    .main__header-rightbtn{
+    &-rightbtn{
       margin-top: 28px;
       margin-right: 20px;
       margin-bottom: auto;
@@ -41,19 +41,19 @@
     padding-left: 40px;
     padding-right: 40px;
     position: fixed;
-    .chat-area__username{
+    &__username{
       margin-top: 46px;
       font-size: 16px;
       font-weight: bold;
       color: #434a54;
       display: flex;
     }
-    .chat-area__created__at{
+    &__created__at{
       margin-left: 10px;
       font-size: 12px;
       color: #999999;
     }
-    .chat-area__text{
+    &__text{
       margin-top: 10px;
       margin-bottom: 40px;
       font-size: 14px;
@@ -69,7 +69,7 @@
     display: flex;
     height: 90px;
     align-items: center;
-    .textmessage{
+    &__textarea{
       font-size: 16px;
       margin-right: 10px;
       margin-left: 40px;
@@ -77,16 +77,16 @@
       width: 100%;
       position: relative;
     }
-
-    .picturelabel{
+    &__picturelabel{
       position: absolute;
       right: 180px;
       cursor: pointer;
+        &__uploadfile{
+          display: none;
+        }
+  
     }
-    .uploadfile{
-      display: none;
-    }
-    .submitbtn{
+    &__submitbtn{
       margin-left: 15px;
       margin-right: 40px;
       background-color: #38AEF0;

@@ -1,9 +1,9 @@
 .chat-main
   .main__header
-    .main__header-leftbox
+    .main__header__leftbox
       .leftbox__title
         group
-        .leftbox__messagepreview
+        .main__header__leftbox__messagepreview
           membername
     .main__header-rightbtn
       = link_to "#" do 
@@ -17,8 +17,8 @@
       こんにちは
 
   .message
-    %input{type:"form",placeholder:" type a message",class:"textmessage"}
-      %label{type:"file",class:"picturelabel"}
-        %input{type: "file",class:"uploadfile"}
+    %input{type:"form",placeholder:" type a message",class:"message__textarea"}
+      %label{type:"file",class:"message__picturelabel"}
+        %input{type: "file",class:"message__picturelabel__uploadfile"}
           <i class="fas fa-images"></i>
-    %input{type: "submit", value:"Send",class:"submitbtn"}
+    %input{type: "submit", value:"Send",class:"message__submitbtn"}
