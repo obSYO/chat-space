@@ -3,15 +3,18 @@
     .side__head--users
       = current_user.name
       .user__btn
-        .user__postbtn 
-          = link_to "#" do 
+        .user__postbtn
+          = link_to new_group_path do
             <i class="fas fa-pen-square fa-fw"></i>
         .user__settingbtn
           = link_to edit_user_path(current_user) do
             <i class="fas fa-cog fa-fw"></i>
 
-  .group
-    .group__name
-      groupname
-      .messagepreview
-        messagepreviews
+  .groups
+  - current_user.groups.each do |group|
+    .group
+      = link_to group_messages_path(group) do
+        .group__name
+          = group.name
+          .messagepreview
+            messagepreviews
