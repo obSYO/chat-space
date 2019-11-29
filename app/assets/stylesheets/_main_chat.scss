@@ -36,7 +36,7 @@
   }
   .chat-area{
     background-color: #fafafa;
-    height:calc(100vh - 100px);
+    height:calc(100vh - 190px);
     width: calc(100vw - 300px);
     padding-left: 40px;
     padding-right: 40px;
@@ -66,34 +66,46 @@
     bottom: 0;
     width: calc(100vw - 300px);
     background-color: #ddd;
-    display: flex;
     height: 90px;
-    align-items: center;
+    display: flex;
+    box-sizing: border-box;
     &__textarea{
       font-size: 16px;
       margin-right: 10px;
       margin-left: 40px;
+      margin-top: 20px;
       height: 50px;
-      width: 100%;
+      float: left;
       position: relative;
-    }
-    &__picturelabel{
-      position: absolute;
-      right: 180px;
-      cursor: pointer;
-        &__uploadfile{
-          display: none;
-        }
-  
+      width: 65vw;
     }
     &__submitbtn{
-      margin-left: 15px;
-      margin-right: 40px;
       background-color: #38AEF0;
       color: white;
       text-align: center;
       padding: 0 30px;
       height: 50px;
       cursor: pointer;
+      margin-top: 20px;
+      position: absolute;
+      position: fixed;
+    }
+
+    #new_message{
+      width: 100%;
+      height: 100%;
+    }
+
+    .mask{
+      margin-top: 35px;
+      position: absolute;
+      right: 180px;
+      position: fixed;
+    }
+    .message__picturelabel{
+      cursor: pointer;
+        .message__uploadfile{
+          display: none;
+        }
     }
   }
