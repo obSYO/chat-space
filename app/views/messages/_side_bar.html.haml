@@ -11,10 +11,10 @@
             <i class="fas fa-cog fa-fw"></i>
 
   .groups
-  - current_user.groups.each do |group|
-    .group
-      = link_to group_messages_path(group) do
-        .group__name
-          = group.name
-          .messagepreview
-            = group.show_last_message
+    - current_user.groups.each do |group|
+      .group
+        = link_to group_messages_path(group) do
+          .group__name
+            = group.name
+            .messagepreview
+              = group.show_last_message

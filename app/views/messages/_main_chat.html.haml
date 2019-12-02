@@ -4,6 +4,7 @@
       .leftbox__title
         = @group.name
         .main__header__leftbox__messagepreview
+          Member:
           - @group.users.each do |user|
             = user.name
     .main__header-rightbtn
@@ -11,18 +12,14 @@
         Edit
 
   .chat-area
-    .chat-area__username
-      username
-      .chat-area__created__at
-        2019
     .chat-area__text
       = render @messages
 
-  .message
+  .messageArea
     = form_for [@group, @message] do |f|
-      = f.text_field :content, class: 'message__textarea', placeholder:" type a message"
+      = f.text_field :content, class: 'messageArea__textarea', placeholder: " type a message"
       .mask
-        = f.label :image, class: 'message__picturelabel' do
+        = f.label :image, class: 'messageArea__picturelabel' do
           = icon('fas', 'image', class: 'icon')
-          = f.file_field :image, class: 'message__uploadfile'
-      = f.submit 'Send', class: 'message__submitbtn'
+          = f.file_field :image, class: 'messageArea__uploadfile'
+      = f.submit 'Send', class: 'messageArea__submitbtn'
