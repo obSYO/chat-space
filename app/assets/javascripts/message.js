@@ -31,7 +31,6 @@ $(function(){
       processData: false,
       contentType: false,
     })
-
     .done(function(message){
       var html = buildHTML(message);
       $('.chat-area__text').append(html);
