@@ -6,10 +6,16 @@
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
+    h2{
+      color: black;
+    }
 
     .account-page__inner--left, .account-page__inner--right {
       float: left;
       width: 50%;
+      a{
+        text-decoration: none;
+      }
     }
     &:after {
       clear: both;
